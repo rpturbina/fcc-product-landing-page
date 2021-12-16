@@ -22,13 +22,14 @@ body {
     background-color: #eee;
 }
 
+
 .header {
     display: grid;
     grid-template-columns: 2fr 2fr;
     align-items: center;
     padding: 1.5rem;
     background-color: #ddd;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
 }
@@ -69,7 +70,7 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin: 15rem 0 5rem;
+    margin: 8rem 0 5rem;
 }
 
 .hero h2 {
@@ -261,14 +262,6 @@ footer p {
         justify-self: center;
     }
 
-
-    .hero {
-        margin-top: 16rem;
-    }
-
-    .hero h2 {
-        margin-left: 1rem;
-    }
 
     .hero input[type="email"] {
         width: 30rem;
