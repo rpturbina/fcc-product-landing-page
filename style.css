@@ -94,7 +94,6 @@ nav ul li a:hover {
 
 .hero input[type="submit"] {
     display: block;
-    max-width: 15rems;
     border: none;
     background-color: #F1C40F;
     padding: 1rem 3rem;
