@@ -11,6 +11,9 @@
 :root {
     --border-radius: 0.4rem;
     --my-box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
+    --ivory: #fcffeb;
+    --coral: #fe5f55;
+    --cream: #fafac6;
 }
 
 html {
@@ -19,7 +22,7 @@ html {
 }
 
 body {
-    background-color: #eee;
+    background-color: var(--ivory);
 }
 
 .header {
@@ -27,7 +30,7 @@ body {
     grid-template-columns: 2fr 2fr;
     align-items: center;
     padding: 1.5rem;
-    background-color: #ddd;
+    background-color: var(--cream);
     position: sticky;
     top: 0;
     width: 100%;
@@ -111,26 +114,22 @@ nav ul li a:hover {
 
 .features {
     display: flex;
-    flex-direction: column;
-    row-gap: 3rem;
+    column-gap: 5rem;
 }
 
 .feature {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    align-items: center;
-    justify-items: center;
     min-height: 10rem;
-}
-
-.feature span {
-    color: #ff8c00;
-    font-size: 6rem;
+    text-align: center;
+    flex-basis: calc(100% / 3);
 }
 
 .feature-desc {
-    justify-self: start;
-    text-align: justify;
+    margin-top: 2rem;
+}
+
+.feature span {
+    color: var(--coral);
+    font-size: 6rem;
 }
 
 .feature-desc h2 {
@@ -178,7 +177,7 @@ nav ul li a:hover {
 
 .product-name {
     text-transform: uppercase;
-    background-color: #ddd;
+    background-color: var(--cream);
     font-size: 1.6rem;
     font-weight: 600;
     padding: 1.4rem 0;
@@ -205,7 +204,7 @@ nav ul li a:hover {
 
 footer {
     margin-top: 4rem;
-    background-color: #ddd;
+    background-color: var(--cream);
     padding: 2rem;
     text-align: center;
     line-height: 2rem;
@@ -238,17 +237,23 @@ footer p {
 
 @media (max-width: 1000px) {
     .features {
-        max-width: 70%;
+        max-width: 80%;
         margin: auto;
     }
 
     .feature {
-        /* justify-items: start; */
-        column-gap: 4rem;
+        flex-basis: 100%;
     }
 }
 
 @media (max-width: 700px) {
+    .features {
+        flex-wrap: wrap;
+        row-gap: 5rem;
+    }
+    .feature {
+        flex-basis: 100%;
+    }
     .pricing {
         flex-direction: column;
         align-items: center;
