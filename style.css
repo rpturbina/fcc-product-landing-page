@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px dotted black; */
     font-family: "Lato", sans-serif;
 }
 
@@ -240,10 +239,6 @@ footer p {
         max-width: 80%;
         margin: auto;
     }
-
-    .feature {
-        flex-basis: 100%;
-    }
 }
 
 @media (max-width: 700px) {
@@ -285,7 +280,6 @@ footer p {
     .feature {
         display: flex;
         flex-direction: column;
-        row-gap: 1rem;
     }
 
     .feature span {
