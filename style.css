@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* border: 1px dotted black; */
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
 :root {
@@ -21,7 +21,6 @@ html {
 body {
     background-color: #eee;
 }
-
 
 .header {
     display: grid;
@@ -84,7 +83,6 @@ nav ul li a:hover {
     justify-content: center;
 }
 
-
 .hero input[type="email"] {
     font-size: 1.8rem;
     padding: 1rem;
@@ -95,7 +93,7 @@ nav ul li a:hover {
 .hero input[type="submit"] {
     display: block;
     border: none;
-    background-color: #F1C40F;
+    background-color: #f1c40f;
     padding: 1rem 3rem;
     margin: 2rem auto;
     text-transform: uppercase;
@@ -126,7 +124,7 @@ nav ul li a:hover {
 }
 
 .feature span {
-    color: #FF8C00;
+    color: #ff8c00;
     font-size: 6rem;
 }
 
@@ -155,12 +153,12 @@ nav ul li a:hover {
 
 .btn {
     border: none;
-    background-color: #F1C40F;
+    background-color: #f1c40f;
     width: 10rem;
     padding: 1rem;
     border-radius: var(--border-radius);
     cursor: pointer;
-    transition: all 0.3s ease-in-out
+    transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
@@ -172,7 +170,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: calc(100%/3);
+    width: calc(100% / 3);
     margin: 1.3rem;
     border-radius: var(--border-radius);
     box-shadow: var(--my-box-shadow);
@@ -247,7 +245,17 @@ footer p {
     .feature {
         /* justify-items: start; */
         column-gap: 4rem;
+    }
+}
 
+@media (max-width: 700px) {
+    .pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 75%;
     }
 }
 
@@ -260,7 +268,6 @@ footer p {
     .logo {
         justify-self: center;
     }
-
 
     .hero input[type="email"] {
         width: 30rem;
@@ -292,15 +299,6 @@ footer p {
     .how-it-works iframe {
         width: auto;
         height: auto;
-    }
-
-    .pricing {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .product {
-        width: 75%;
     }
 
     .footer-link a {
